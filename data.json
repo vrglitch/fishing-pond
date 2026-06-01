@@ -1,0 +1,48 @@
+{
+  "timing": {
+    "biteTimeMin": 0,
+    "biteTimeMax": 1,
+    "biteReactionWindow": 3
+  },
+  "global": {
+    "fishDps": 30,
+    "playerDps": 30
+  },
+  "rods": [
+    { "id": "R001", "name": "Beggar Rod",    "rarity": "Common",    "hp":   80, "speedMult": 100, "reelOut": 20, "reelIn": 20, "responsiveness": 350 },
+    { "id": "R002", "name": "Wood Rod",      "rarity": "Uncommon",  "hp":  120, "speedMult":  80, "reelOut": 25, "reelIn": 20, "responsiveness": 250 },
+    { "id": "R003", "name": "Technical Rod", "rarity": "Rare",      "hp":  200, "speedMult":  70, "reelOut": 30, "reelIn": 20, "responsiveness": 180 },
+    { "id": "R004", "name": "Sniper Rod",    "rarity": "Epic",      "hp":  400, "speedMult":  60, "reelOut": 35, "reelIn": 15, "responsiveness": 180 },
+    { "id": "R005", "name": "Legendary Rod", "rarity": "Legendary", "hp":  800, "speedMult":  50, "reelOut": 40, "reelIn": 18, "responsiveness": 140 },
+    { "id": "R006", "name": "Spectral Rod",  "rarity": "Unique",    "hp": 1600, "speedMult":  40, "reelOut": 45, "reelIn": 15, "responsiveness": 100 }
+  ],
+  "baits": [
+    { "id": "B001", "name": "Worm",           "rarity": "Common",    "rarityWeights": { "Common": 95, "Uncommon":  5, "Rare":  0, "Epic":  0, "Legendary":  0, "Unique":  0 } },
+    { "id": "B002", "name": "Fly",            "rarity": "Uncommon",  "rarityWeights": { "Common": 30, "Uncommon": 65, "Rare":  5, "Epic":  0, "Legendary":  0, "Unique":  0 } },
+    { "id": "B003", "name": "Shrimp",         "rarity": "Rare",      "rarityWeights": { "Common": 20, "Uncommon": 30, "Rare": 49, "Epic":  1, "Legendary":  0, "Unique":  0 } },
+    { "id": "B004", "name": "Bacon",          "rarity": "Epic",      "rarityWeights": { "Common": 10, "Uncommon": 15, "Rare": 25, "Epic": 49, "Legendary":  1, "Unique":  0 } },
+    { "id": "B005", "name": "Enchanted Worm", "rarity": "Legendary", "rarityWeights": { "Common":  0, "Uncommon":  5, "Rare": 15, "Epic": 25, "Legendary": 54, "Unique":  1 } },
+    { "id": "B006", "name": "Spectral Worm",  "rarity": "Unique",    "rarityWeights": { "Common":  0, "Uncommon":  0, "Rare":  5, "Epic": 15, "Legendary": 25, "Unique": 55 } }
+  ],
+  "catches": [
+    { "id": "C001", "name": "Starfish",       "icon": "⭐", "rarity": "Common",    "weight":  60, "cashback":   2, "zoneSize": 20, "speed":  0.5, "randomness":  5, "hp": 200 },
+    { "id": "C002", "name": "Sardine",        "icon": "🐟", "rarity": "Common",    "weight": 100, "cashback":   3, "zoneSize": 38, "speed":  2.5, "randomness": 60, "hp": 250 },
+    { "id": "C003", "name": "Fishbone",       "icon": "🦴", "rarity": "Common",    "weight":  80, "cashback":   1, "zoneSize": 38, "speed":  1.0, "randomness": 30, "hp": 300 },
+    { "id": "C004", "name": "Seaweed",        "icon": "🌿", "rarity": "Common",    "weight":  20, "cashback":   1, "zoneSize": 38, "speed":  1.0, "randomness": 10, "hp": 200 },
+    { "id": "C005", "name": "Tin Can",        "icon": "🥫", "rarity": "Common",    "weight":  10, "cashback":   1, "zoneSize": 38, "speed":  0.5, "randomness": 20, "hp": 100 },
+    { "id": "C006", "name": "Shrimp",         "icon": "🦐", "rarity": "Uncommon",  "weight":  50, "cashback":   5, "zoneSize": 28, "speed":  3.5, "randomness": 70, "hp": 250 },
+    { "id": "C007", "name": "Boot",           "icon": "👢", "rarity": "Uncommon",  "weight":  40, "cashback":   1, "zoneSize": 25, "speed":  1.0, "randomness": 20, "hp": 430 },
+    { "id": "C008", "name": "Crab",           "icon": "🦀", "rarity": "Uncommon",  "weight":  30, "cashback":   6, "zoneSize": 30, "speed":  2.0, "randomness": 20, "hp": 400 },
+    { "id": "C009", "name": "Octopus",        "icon": "🐙", "rarity": "Rare",      "weight":  20, "cashback":  15, "zoneSize": 30, "speed":  3.0, "randomness": 30, "hp": 450 },
+    { "id": "C010", "name": "Medium Fish",    "icon": "🐠", "rarity": "Rare",      "weight":  20, "cashback":  10, "zoneSize": 35, "speed":  7.0, "randomness": 70, "hp": 350 },
+    { "id": "C011", "name": "Lobster",        "icon": "🦞", "rarity": "Rare",      "weight":  10, "cashback":  20, "zoneSize": 30, "speed":  8.0, "randomness": 30, "hp": 350 },
+    { "id": "C012", "name": "Large Fish",     "icon": "🐡", "rarity": "Epic",      "weight":  10, "cashback":  10, "zoneSize": 16, "speed":  7.0, "randomness": 87, "hp": 200 },
+    { "id": "C013", "name": "Treasure Chest", "icon": "💰", "rarity": "Epic",      "weight":   8, "cashback":  50, "zoneSize": 16, "speed":  7.0, "randomness": 87, "hp": 200 },
+    { "id": "C014", "name": "Pigeon",         "icon": "🕊️", "rarity": "Legendary", "weight":   5, "cashback":  10, "zoneSize": 11, "speed":  9.5, "randomness": 93, "hp": 280 },
+    { "id": "C015", "name": "Golden Salmon",  "icon": "✨", "rarity": "Legendary", "weight":   5, "cashback": 100, "zoneSize": 11, "speed":  9.5, "randomness": 93, "hp": 280 },
+    { "id": "C016", "name": "Bored Ape",      "icon": "🐵", "rarity": "Legendary", "weight":   5, "cashback":   1, "zoneSize": 11, "speed":  9.5, "randomness": 93, "hp": 280 },
+    { "id": "C017", "name": "Tobor",          "icon": "🤖", "rarity": "Legendary", "weight":   5, "cashback":  50, "zoneSize": 11, "speed":  9.5, "randomness": 93, "hp": 280 },
+    { "id": "C018", "name": "Kraken",         "icon": "🦑", "rarity": "Unique",    "weight":   3, "cashback": 500, "zoneSize":  7, "speed": 13.0, "randomness": 98, "hp": 350 },
+    { "id": "C019", "name": "Ghost Whale",    "icon": "🐋", "rarity": "Unique",    "weight":   2, "cashback": 300, "zoneSize":  7, "speed": 13.0, "randomness": 98, "hp": 350 }
+  ]
+}
