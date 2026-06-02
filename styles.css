@@ -414,6 +414,7 @@
     color: var(--accent);
     display: flex; justify-content: space-between; align-items: center;
     user-select: none;
+    position: sticky; top: 0; z-index: 3;
   }
   .debug-section-header:hover { background: var(--bg-3); }
   .debug-section-body { padding: 12px 14px; }
@@ -470,6 +471,8 @@
     text-transform: uppercase; letter-spacing: 0.1em;
     padding: 4px 3px 6px; border-bottom: 1px solid var(--line);
     font-weight: 700;
+    position: sticky; top: 34px; z-index: 2;
+    background: var(--bg-1);
   }
   .debug-table td {
     padding: 5px 3px; border-bottom: 1px dotted var(--line);

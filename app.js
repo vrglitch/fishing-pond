@@ -915,7 +915,7 @@ function buildCatchesTable() {
   const catches = $('catches-body'); catches.innerHTML = '';
   const t = document.createElement('table'); t.className = 'debug-table';
   t.innerHTML = `<thead><tr>
-    <th></th><th>Name</th><th>Rarity</th>
+    <th>ID</th><th></th><th>Name</th><th>Rarity</th>
     <th><span class="tip" data-tip="Relative pick chance within this item's rarity bucket.\nHigher weight = more likely to be chosen when that rarity is rolled.">Weight</span></th>
     <th><span class="tip" data-tip="Token reward on successful catch.">Tokens</span></th>
     <th><span class="tip" data-tip="Catchable zone size (0–100%).\nLarger = easier to keep indicator on fish.">Zone</span></th>
@@ -928,6 +928,7 @@ function buildCatchesTable() {
   CONFIG.catches.forEach(c => {
     const tr = document.createElement('tr');
     tr.innerHTML = `
+      <td style="color:var(--text-muted)">${c.id}</td>
       <td>${c.icon}</td>
       <td>${c.name}</td>
       <td><span class="rarity-tag r-${c.rarity}">${c.rarity}</span></td>
@@ -978,7 +979,7 @@ function rebuildSelects() {
   forceSel.innerHTML = '<option value="">— Random (use Bait) —</option>';
   CONFIG.catches.forEach(c => {
     const opt = document.createElement('option');
-    opt.value = c.id; opt.textContent = `${c.icon} ${c.name} (${c.rarity})`;
+    opt.value = c.id; opt.textContent = `[${c.id}] ${c.icon} ${c.name} (${c.rarity})`;
     if (c.id === prevForce) opt.selected = true;
     forceSel.appendChild(opt);
   });
